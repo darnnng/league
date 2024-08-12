@@ -6,7 +6,7 @@ import { Loader } from "@/components/primitives";
 import { ImageCard } from "@/components/ui";
 
 const HomePage = observer(() => {
-  const { getImages, images, filteredImages, isLoading } = imagesService;
+  const { filteredImages, isLoading } = imagesService;
 
   useEffect(() => {
     imagesService.getImages();

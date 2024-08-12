@@ -41,7 +41,6 @@ class ImagesService {
         const highlightedTitle = searchHighlight(searchValue, image.title);
         acc.push({ ...image, title: highlightedTitle });
       } else if (!searchValue) {
-        console.log(image, "image");
         acc.push(image);
       }
       return acc;

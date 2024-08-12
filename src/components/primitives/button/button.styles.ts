@@ -3,8 +3,8 @@ import { css, styled } from "styled-components";
 import { IStyledButtonProps } from "./button.types";
 
 export const Button = styled.button<IStyledButtonProps>`
-  ${({ theme, $variant }) => {
-    const { fontSize, lineHeight, fontFamily, fontWeight } = theme.typography;
+  ${({ theme }) => {
+    const { fontSize, fontFamily, fontWeight } = theme.typography;
     const { primary, text } = theme.palette;
 
     return css`

@@ -8,19 +8,16 @@ import Modal from "@/components/primitives/modalWindow/modalWindow";
 
 export const ImageCard = observer(
   ({ image: { thumbnailUrl, title, url } }: ImageCardProps) => {
-    // Компонент модалки
     const ModalComponent = () => (
       <Modal title={title} open={true} onClose={handleCloseModal}>
         <img src={url} alt={title} />
       </Modal>
     );
 
-    // Закрытие модалки
     const handleCloseModal = () => {
       modalService.closeModal();
     };
 
-    // Открытие модалки
     const handleOpenModal = () => {
       modalService.openModal(ModalComponent);
     };
@@ -36,12 +33,12 @@ export const ImageCard = observer(
             Full size
           </Button>
         </Styled.ContentWrapper>
-        {/* Рендеринг модалок из сервиса */}
-        {modalService.modals.map((modal, index) => (
-          <React.Fragment key={index}>
-            <modal.Component />
+
+        {modalService.modal && (
+          <React.Fragment>
+            <modalService.modal.Component />
           </React.Fragment>
-        ))}
+        )}
       </Styled.Card>
     );
   }
