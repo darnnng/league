@@ -1,9 +1,8 @@
 import React from "react";
-import ReactDOM from "react-dom";
 import * as Styled from "./modalWindow.styles";
 import { ModalWindowProps } from "./modalWindow.types";
 
-const Modal: React.FC<ModalWindowProps> = ({
+export const Modal: React.FC<ModalWindowProps> = ({
   title,
   children,
   open,
@@ -11,21 +10,21 @@ const Modal: React.FC<ModalWindowProps> = ({
 }) => {
   if (!open) return null;
 
-  const modalRoot = document.getElementById("modal-root");
-  if (!modalRoot) return null;
+  const handleOnOutsideClick = (
+    event: React.SyntheticEvent<HTMLDivElement>
+  ) => {
+    event.stopPropagation();
+  };
 
-  return ReactDOM.createPortal(
+  return (
     <Styled.Overlay open={open} onClick={onClose}>
-      <Styled.ModalContainer onClick={(event) => event.stopPropagation()}>
+      <Styled.ModalContainer onClick={handleOnOutsideClick}>
         <Styled.Header>
           <Styled.Title>{title}</Styled.Title>
           <Styled.CloseButton onClick={onClose}>&times;</Styled.CloseButton>
         </Styled.Header>
         <Styled.Content>{children}</Styled.Content>
       </Styled.ModalContainer>
-    </Styled.Overlay>,
-    modalRoot
+    </Styled.Overlay>
   );
 };
-
-export default Modal;

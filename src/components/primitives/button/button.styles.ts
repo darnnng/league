@@ -34,7 +34,6 @@ export const Button = styled.button<IStyledButtonProps>`
           box-shadow: none;
           background-color: ${text.main};
           filter: none;
-          cursor: default;
         }
       }
     `;

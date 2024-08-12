@@ -1,25 +1,16 @@
 import React from "react";
 import { observer } from "mobx-react-lite";
-import { modalService } from "@/services/modals";
 import { Button } from "../../primitives/button";
 import * as Styled from "./imageCard.styles";
 import { ImageCardProps } from "./imageCard.types";
-import Modal from "@/components/primitives/modalWindow/modalWindow";
+import { useModal } from "@/hooks/useModal";
 
 export const ImageCard = observer(
   ({ image: { thumbnailUrl, title, url } }: ImageCardProps) => {
-    const ModalComponent = () => (
-      <Modal title={title} open={true} onClose={handleCloseModal}>
-        <img src={url} alt={title} />
-      </Modal>
-    );
-
-    const handleCloseModal = () => {
-      modalService.closeModal();
-    };
+    const [openModal] = useModal();
 
     const handleOpenModal = () => {
-      modalService.openModal(ModalComponent);
+      openModal({ url, title });
     };
 
     return (
@@ -29,16 +20,8 @@ export const ImageCard = observer(
         </div>
         <Styled.ContentWrapper>
           <Styled.Heading dangerouslySetInnerHTML={{ __html: title }} />
-          <Button variant="outlined" onClick={handleOpenModal}>
-            Full size
-          </Button>
+          <Button onClick={handleOpenModal}>Full size</Button>
         </Styled.ContentWrapper>
-
-        {modalService.modal && (
-          <React.Fragment>
-            <modalService.modal.Component />
-          </React.Fragment>
-        )}
       </Styled.Card>
     );
   }

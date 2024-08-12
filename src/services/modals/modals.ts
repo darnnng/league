@@ -1,19 +1,31 @@
+import { ImageModalProps } from "@/components/ui";
 import { makeAutoObservable } from "mobx";
-import { Modal } from "./modal.types";
+import { v4 as uuidv4 } from "uuid";
+
+interface Modal {
+  id: string;
+  Component: React.FC;
+}
 
 class ModalService {
-  modal: Modal | null = null;
+  modals: Modal[] = [];
 
   constructor() {
     makeAutoObservable(this);
   }
 
-  openModal(Component: Modal["Component"]) {
-    this.modal = { Component };
+  openModal(Component: React.FC): string {
+    const id = uuidv4();
+    this.modals.push({ id, Component });
+    return id;
   }
 
-  closeModal() {
-    this.modal = null;
+  closeModal(id: string): void {
+    this.modals = this.modals.filter((modal) => modal.id !== id);
+  }
+
+  closeAllModals(): void {
+    this.modals = [];
   }
 }
 
