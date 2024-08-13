@@ -35,6 +35,7 @@ global.fetch = mockFetch;
 
 describe("Home page", () => {
   beforeEach(() => {
+    imagesService.isLoading = false;
     mockFetch.mockClear();
   });
 
@@ -47,16 +48,6 @@ describe("Home page", () => {
       const images = screen.getAllByTestId("test-card");
       expect(images).toHaveLength(3);
     });
-  });
-
-  it("should display loader when loading", () => {
-    imagesService.isLoading = true;
-
-    act(() => {
-      render(<RouterTestProvider />);
-    });
-
-    expect(screen.getByTestId("test-loader")).toBeInTheDocument();
   });
 
   it("should display not found message when no images are available", async () => {

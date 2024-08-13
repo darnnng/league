@@ -1,4 +1,3 @@
-import React from "react";
 import { observer } from "mobx-react-lite";
 import { Button } from "components/ui";
 import * as Styled from "./imageCard.styles";
@@ -14,8 +13,6 @@ export const ImageCard = observer(
     const handleOpenModal = () => {
       openModal({ url, title });
     };
-
-    console.log(imagesService.searchValue, "searhc value");
 
     return (
       <Styled.Card data-testid="test-card">

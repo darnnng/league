@@ -1,5 +1,5 @@
 import { render } from "@testing-library/react";
-import { searchHighlight } from "./searchHighlight";
+import { searchHighlight } from "./../searchHighlight";
 
 const renderHighlightedText = (searchParameter: string, text: string) =>
   render(<>{searchHighlight(searchParameter, text)}</>);
