@@ -1,6 +1,6 @@
 import { useCallback, useRef } from "react";
-import { modalService } from "@/services/modals";
-import { ImageModal, ImageModalProps } from "@/components/ui";
+import { modalService } from "services/modals";
+import { ImageModal, ImageModalProps } from "components/compositions";
 
 export const useModal = () => {
   const activeModalId = useRef<string | null>(null);

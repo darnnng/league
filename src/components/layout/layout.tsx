@@ -1,11 +1,8 @@
 import { Suspense } from "react";
 import { Outlet } from "react-router-dom";
-import { Header } from "../ui/header";
-import { Loader } from "../primitives/loader";
-import { modalService } from "@/services/modals";
-import React from "react";
-import { ModalContainer } from "../primitives/modalWindow/modalWindow.styles";
-import { ModalsContainer } from "../ui/modalsContainer";
+import { Header } from "components/compositions";
+import { Loader } from "components/ui";
+import { ModalsContainer } from "components/compositions";
 
 export const Layout = () => {
   return (

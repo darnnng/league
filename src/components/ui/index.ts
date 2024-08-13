@@ -1,3 +1,4 @@
-export * from "./imageCard";
-export * from "./header";
-export * from "./imageModal";
+export * from "./button";
+export * from "./input";
+export * from "./modalWindow";
+export * from "./loader";

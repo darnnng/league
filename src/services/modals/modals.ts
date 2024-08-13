@@ -1,4 +1,3 @@
-import { ImageModalProps } from "@/components/ui";
 import { makeAutoObservable } from "mobx";
 import { v4 as uuidv4 } from "uuid";
 
@@ -22,10 +21,6 @@ class ModalService {
 
   closeModal(id: string): void {
     this.modals = this.modals.filter((modal) => modal.id !== id);
-  }
-
-  closeAllModals(): void {
-    this.modals = [];
   }
 }
 

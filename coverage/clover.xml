@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1723547128867" clover="3.2.0">
+  <project timestamp="1723547128868" name="All files">
+    <metrics statements="172" coveredstatements="151" conditionals="32" coveredconditionals="21" methods="63" coveredmethods="50" elements="267" coveredelements="222" complexity="0" loc="172" ncloc="172" packages="22" files="54" classes="54"/>
+    <package name="src">
+      <metrics statements="3" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+      <file name="App.tsx" path="C:\Users\User\PROJECTS\daria-nagai-league\daria-nagai-league\src\App.tsx">
+        <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="8" count="0" type="stmt"/>
+        <line num="9" count="0" type="stmt"/>
+      </file>
+      <file name="main.tsx" path="C:\Users\User\PROJECTS\daria-nagai-league\daria-nagai-league\src\main.tsx">
+        <metrics statements="1" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="5" count="0" type="stmt"/>
+      </file>
+      <file name="vite-env.d.ts" path="C:\Users\User\PROJECTS\daria-nagai-league\daria-nagai-league\src\vite-env.d.ts">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="src.components.compositions">
+      <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="index.ts" path="C:\Users\User\PROJECTS\daria-nagai-league\daria-nagai-league\src\components\compositions\index.ts">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="src.components.compositions.header">
+      <metrics statements="9" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
+      <file name="header.styles.ts" path="C:\Users\User\PROJECTS\daria-nagai-league\daria-nagai-league\src\components\compositions\header\header.styles.ts">
+        <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
+        <line num="3" count="4" type="stmt"/>
+        <line num="5" count="3" type="stmt"/>
+        <line num="29" count="4" type="stmt"/>
+        <line num="35" count="4" type="stmt"/>
+        <line num="37" count="3" type="stmt"/>
+        <line num="45" count="4" type="stmt"/>
+        <line num="47" count="3" type="stmt"/>
+      </file>
+      <file name="header.tsx" path="C:\Users\User\PROJECTS\daria-nagai-league\daria-nagai-league\src\components\compositions\header\header.tsx">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="6" count="4" type="stmt"/>
+        <line num="7" count="3" type="stmt"/>
+      </file>
+      <file name="index.ts" path="C:\Users\User\PROJECTS\daria-nagai-league\daria-nagai-league\src\components\compositions\header\index.ts">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="src.components.compositions.imageCard">
+      <metrics statements="13" coveredstatements="12" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="5"/>
+      <file name="imageCard.styles.ts" path="C:\Users\User\PROJECTS\daria-nagai-league\daria-nagai-league\src\components\compositions\imageCard\imageCard.styles.ts">
+        <metrics statements="8" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
+        <line num="3" count="4" type="stmt"/>
+        <line num="4" count="9" type="stmt"/>
+        <line num="19" count="4" type="stmt"/>
+        <line num="20" count="9" type="stmt"/>
+        <line num="34" count="4" type="stmt"/>
+        <line num="35" count="9" type="stmt"/>
+        <line num="51" count="4" type="stmt"/>
+        <line num="52" count="9" type="stmt"/>
+      </file>
+      <file name="imageCard.tsx" path="C:\Users\User\PROJECTS\daria-nagai-league\daria-nagai-league\src\components\compositions\imageCard\imageCard.tsx">
+        <metrics statements="5" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
+        <line num="8" count="4" type="stmt"/>
+        <line num="10" count="9" type="stmt"/>
+        <line num="12" count="9" type="stmt"/>
+        <line num="13" count="0" type="stmt"/>
+        <line num="16" count="9" type="stmt"/>
+      </file>
+      <file name="imageCard.types.ts" path="C:\Users\User\PROJECTS\daria-nagai-league\daria-nagai-league\src\components\compositions\imageCard\imageCard.types.ts">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="index.ts" path="C:\Users\User\PROJECTS\daria-nagai-league\daria-nagai-league\src\components\compositions\imageCard\index.ts">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="src.components.compositions.imageModal">
+      <metrics statements="13" coveredstatements="13" conditionals="2" coveredconditionals="2" methods="5" coveredmethods="4"/>
+      <file name="imageModal.styles.ts" path="C:\Users\User\PROJECTS\daria-nagai-league\daria-nagai-league\src\components\compositions\imageModal\imageModal.styles.ts">
+        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="3" count="4" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="17" count="4" type="stmt"/>
+      </file>
+      <file name="imageModal.tsx" path="C:\Users\User\PROJECTS\daria-nagai-league\daria-nagai-league\src\components\compositions\imageModal\imageModal.tsx">
+        <metrics statements="10" coveredstatements="10" conditionals="2" coveredconditionals="2" methods="4" coveredmethods="3"/>
+        <line num="7" count="4" type="stmt"/>
+        <line num="8" count="3" type="stmt"/>
+        <line num="10" count="3" type="stmt"/>
+        <line num="11" count="2" type="stmt"/>
+        <line num="12" count="2" type="stmt"/>
+        <line num="13" count="2" type="stmt"/>
+        <line num="14" count="2" type="stmt"/>
+        <line num="17" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="18" count="2" type="stmt"/>
+        <line num="25" count="1" type="stmt"/>
+      </file>
+      <file name="imageModal.types.ts" path="C:\Users\User\PROJECTS\daria-nagai-league\daria-nagai-league\src\components\compositions\imageModal\imageModal.types.ts">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="index.ts" path="C:\Users\User\PROJECTS\daria-nagai-league\daria-nagai-league\src\components\compositions\imageModal\index.ts">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="src.components.compositions.modalsContainer">
+      <metrics statements="4" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
+      <file name="index.ts" path="C:\Users\User\PROJECTS\daria-nagai-league\daria-nagai-league\src\components\compositions\modalsContainer\index.ts">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="modalsContainer.tsx" path="C:\Users\User\PROJECTS\daria-nagai-league\daria-nagai-league\src\components\compositions\modalsContainer\modalsContainer.tsx">
+        <metrics statements="4" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
+        <line num="4" count="4" type="stmt"/>
+        <line num="5" count="3" type="stmt"/>
+        <line num="7" count="3" type="stmt"/>
+        <line num="10" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.components.compositions.searchBox">
+      <metrics statements="16" coveredstatements="16" conditionals="4" coveredconditionals="4" methods="3" coveredmethods="3"/>
+      <file name="index.ts" path="C:\Users\User\PROJECTS\daria-nagai-league\daria-nagai-league\src\components\compositions\searchBox\index.ts">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="searchBox.tsx" path="C:\Users\User\PROJECTS\daria-nagai-league\daria-nagai-league\src\components\compositions\searchBox\searchBox.tsx">
+        <metrics statements="16" coveredstatements="16" conditionals="4" coveredconditionals="4" methods="3" coveredmethods="3"/>
+        <line num="8" count="4" type="stmt"/>
+        <line num="9" count="14" type="stmt"/>
+        <line num="10" count="14" type="stmt"/>
+        <line num="11" count="14" type="stmt"/>
+        <line num="13" count="14" type="stmt"/>
+        <line num="14" count="8" type="cond" truecount="2" falsecount="0"/>
+        <line num="15" count="2" type="stmt"/>
+        <line num="16" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="17" count="1" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
+        <line num="20" count="1" type="stmt"/>
+        <line num="23" count="6" type="stmt"/>
+        <line num="24" count="6" type="stmt"/>
+        <line num="28" count="14" type="stmt"/>
+        <line num="29" count="2" type="stmt"/>
+        <line num="31" count="14" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.components.layout">
+      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="index.tsx" path="C:\Users\User\PROJECTS\daria-nagai-league\daria-nagai-league\src\components\layout\index.tsx">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="layout.tsx" path="C:\Users\User\PROJECTS\daria-nagai-league\daria-nagai-league\src\components\layout\layout.tsx">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="7" count="4" type="stmt"/>
+        <line num="8" count="4" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.components.ui">
+      <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="index.ts" path="C:\Users\User\PROJECTS\daria-nagai-league\daria-nagai-league\src\components\ui\index.ts">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="src.components.ui.button">
+      <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+      <file name="button.styles.ts" path="C:\Users\User\PROJECTS\daria-nagai-league\daria-nagai-league\src\components\ui\button\button.styles.ts">
+        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="5" count="4" type="stmt"/>
+        <line num="7" count="9" type="stmt"/>
+        <line num="8" count="9" type="stmt"/>
+        <line num="10" count="9" type="stmt"/>
+      </file>
+      <file name="button.tsx" path="C:\Users\User\PROJECTS\daria-nagai-league\daria-nagai-league\src\components\ui\button\button.tsx">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="4" count="4" type="stmt"/>
+        <line num="5" count="9" type="stmt"/>
+      </file>
+      <file name="button.types.ts" path="C:\Users\User\PROJECTS\daria-nagai-league\daria-nagai-league\src\components\ui\button\button.types.ts">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="index.ts" path="C:\Users\User\PROJECTS\daria-nagai-league\daria-nagai-league\src\components\ui\button\index.ts">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="src.components.ui.input">
+      <metrics statements="13" coveredstatements="12" conditionals="8" coveredconditionals="6" methods="5" coveredmethods="4"/>
+      <file name="index.ts" path="C:\Users\User\PROJECTS\daria-nagai-league\daria-nagai-league\src\components\ui\input\index.ts">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="input.styles.ts" path="C:\Users\User\PROJECTS\daria-nagai-league\daria-nagai-league\src\components\ui\input\input.styles.ts">
+        <metrics statements="11" coveredstatements="10" conditionals="4" coveredconditionals="3" methods="4" coveredmethods="3"/>
+        <line num="4" count="4" type="stmt"/>
+        <line num="6" count="11" type="stmt"/>
+        <line num="7" count="11" type="stmt"/>
+        <line num="9" count="11" type="stmt"/>
+        <line num="46" count="4" type="stmt"/>
+        <line num="50" count="4" type="stmt"/>
+        <line num="52" count="0" type="stmt"/>
+        <line num="63" count="4" type="stmt"/>
+        <line num="65" count="11" type="stmt"/>
+        <line num="66" count="11" type="stmt"/>
+        <line num="78" count="4" type="stmt"/>
+      </file>
+      <file name="input.tsx" path="C:\Users\User\PROJECTS\daria-nagai-league\daria-nagai-league\src\components\ui\input\input.tsx">
+        <metrics statements="2" coveredstatements="2" conditionals="4" coveredconditionals="3" methods="1" coveredmethods="1"/>
+        <line num="5" count="4" type="stmt"/>
+        <line num="7" count="11" type="stmt"/>
+      </file>
+      <file name="input.types.ts" path="C:\Users\User\PROJECTS\daria-nagai-league\daria-nagai-league\src\components\ui\input\input.types.ts">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="src.components.ui.loader">
+      <metrics statements="8" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
+      <file name="index.ts" path="C:\Users\User\PROJECTS\daria-nagai-league\daria-nagai-league\src\components\ui\loader\index.ts">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="loader.styles.ts" path="C:\Users\User\PROJECTS\daria-nagai-league\daria-nagai-league\src\components\ui\loader\loader.styles.ts">
+        <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <line num="4" count="4" type="stmt"/>
+        <line num="13" count="4" type="stmt"/>
+        <line num="18" count="6" type="stmt"/>
+        <line num="21" count="4" type="stmt"/>
+        <line num="23" count="6" type="stmt"/>
+        <line num="25" count="6" type="stmt"/>
+      </file>
+      <file name="loader.tsx" path="C:\Users\User\PROJECTS\daria-nagai-league\daria-nagai-league\src\components\ui\loader\loader.tsx">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="3" count="4" type="stmt"/>
+        <line num="4" count="6" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.components.ui.modalWindow">
+      <metrics statements="12" coveredstatements="12" conditionals="4" coveredconditionals="2" methods="3" coveredmethods="3"/>
+      <file name="index.ts" path="C:\Users\User\PROJECTS\daria-nagai-league\daria-nagai-league\src\components\ui\modalWindow\index.ts">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="modalWindow.styles.ts" path="C:\Users\User\PROJECTS\daria-nagai-league\daria-nagai-league\src\components\ui\modalWindow\modalWindow.styles.ts">
+        <metrics statements="7" coveredstatements="7" conditionals="2" coveredconditionals="1" methods="1" coveredmethods="1"/>
+        <line num="7" count="4" type="stmt"/>
+        <line num="8" count="5" type="cond" truecount="1" falsecount="1"/>
+        <line num="18" count="4" type="stmt"/>
+        <line num="32" count="4" type="stmt"/>
+        <line num="39" count="4" type="stmt"/>
+        <line num="44" count="4" type="stmt"/>
+        <line num="51" count="4" type="stmt"/>
+      </file>
+      <file name="modalWindow.tsx" path="C:\Users\User\PROJECTS\daria-nagai-league\daria-nagai-league\src\components\ui\modalWindow\modalWindow.tsx">
+        <metrics statements="5" coveredstatements="5" conditionals="2" coveredconditionals="1" methods="2" coveredmethods="2"/>
+        <line num="5" count="4" type="stmt"/>
+        <line num="11" count="5" type="cond" truecount="1" falsecount="1"/>
+        <line num="13" count="5" type="stmt"/>
+        <line num="16" count="2" type="stmt"/>
+        <line num="19" count="5" type="stmt"/>
+      </file>
+      <file name="modalWindow.types.ts" path="C:\Users\User\PROJECTS\daria-nagai-league\daria-nagai-league\src\components\ui\modalWindow\modalWindow.types.ts">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="src.constants">
+      <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="url.ts" path="C:\Users\User\PROJECTS\daria-nagai-league\daria-nagai-league\src\constants\url.ts">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="3" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.hooks">
+      <metrics statements="11" coveredstatements="5" conditionals="2" coveredconditionals="0" methods="4" coveredmethods="1"/>
+      <file name="useModal.tsx" path="C:\Users\User\PROJECTS\daria-nagai-league\daria-nagai-league\src\hooks\useModal.tsx">
+        <metrics statements="11" coveredstatements="5" conditionals="2" coveredconditionals="0" methods="4" coveredmethods="1"/>
+        <line num="5" count="4" type="stmt"/>
+        <line num="6" count="9" type="stmt"/>
+        <line num="8" count="9" type="stmt"/>
+        <line num="9" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="10" count="0" type="stmt"/>
+        <line num="11" count="0" type="stmt"/>
+        <line num="15" count="9" type="stmt"/>
+        <line num="17" count="0" type="stmt"/>
+        <line num="18" count="0" type="stmt"/>
+        <line num="20" count="0" type="stmt"/>
+        <line num="25" count="9" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.pages.homePage">
+      <metrics statements="16" coveredstatements="16" conditionals="4" coveredconditionals="4" methods="7" coveredmethods="7"/>
+      <file name="homePage.styles.ts" path="C:\Users\User\PROJECTS\daria-nagai-league\daria-nagai-league\src\pages\homePage\homePage.styles.ts">
+        <metrics statements="8" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="5" count="5" type="stmt"/>
+        <line num="19" count="1" type="stmt"/>
+        <line num="21" count="5" type="stmt"/>
+        <line num="36" count="1" type="stmt"/>
+        <line num="38" count="5" type="stmt"/>
+        <line num="49" count="1" type="stmt"/>
+        <line num="51" count="2" type="stmt"/>
+      </file>
+      <file name="homePage.tsx" path="C:\Users\User\PROJECTS\daria-nagai-league\daria-nagai-league\src\pages\homePage\homePage.tsx">
+        <metrics statements="8" coveredstatements="8" conditionals="4" coveredconditionals="4" methods="3" coveredmethods="3"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="9" count="8" type="stmt"/>
+        <line num="11" count="8" type="stmt"/>
+        <line num="12" count="3" type="stmt"/>
+        <line num="15" count="8" type="cond" truecount="2" falsecount="0"/>
+        <line num="16" count="3" type="stmt"/>
+        <line num="19" count="5" type="stmt"/>
+        <line num="25" count="9" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.router">
+      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="index.tsx" path="C:\Users\User\PROJECTS\daria-nagai-league\daria-nagai-league\src\router\index.tsx">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="router.tsx" path="C:\Users\User\PROJECTS\daria-nagai-league\daria-nagai-league\src\router\router.tsx">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="6" count="4" type="stmt"/>
+        <line num="8" count="4" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.services.images">
+      <metrics statements="19" coveredstatements="18" conditionals="4" coveredconditionals="2" methods="6" coveredmethods="6"/>
+      <file name="images.ts" path="C:\Users\User\PROJECTS\daria-nagai-league\daria-nagai-league\src\services\images\images.ts">
+        <metrics statements="19" coveredstatements="18" conditionals="4" coveredconditionals="2" methods="6" coveredmethods="6"/>
+        <line num="7" count="3" type="stmt"/>
+        <line num="8" count="3" type="stmt"/>
+        <line num="9" count="3" type="stmt"/>
+        <line num="12" count="3" type="stmt"/>
+        <line num="16" count="3" type="stmt"/>
+        <line num="17" count="3" type="stmt"/>
+        <line num="18" count="3" type="stmt"/>
+        <line num="19" count="3" type="cond" truecount="1" falsecount="1"/>
+        <line num="20" count="3" type="stmt"/>
+        <line num="21" count="3" type="stmt"/>
+        <line num="24" count="0" type="stmt"/>
+        <line num="26" count="3" type="stmt"/>
+        <line num="31" count="3" type="stmt"/>
+        <line num="35" count="6" type="stmt"/>
+        <line num="36" count="6" type="stmt"/>
+        <line num="38" count="12" type="stmt"/>
+        <line num="39" count="12" type="cond" truecount="1" falsecount="1"/>
+        <line num="41" count="12" type="stmt"/>
+        <line num="48" count="3" type="stmt"/>
+      </file>
+      <file name="index.ts" path="C:\Users\User\PROJECTS\daria-nagai-league\daria-nagai-league\src\services\images\index.ts">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="src.services.modals">
+      <metrics statements="7" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="1"/>
+      <file name="index.ts" path="C:\Users\User\PROJECTS\daria-nagai-league\daria-nagai-league\src\services\modals\index.ts">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="modal.types.ts" path="C:\Users\User\PROJECTS\daria-nagai-league\daria-nagai-league\src\services\modals\modal.types.ts">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="modals.ts" path="C:\Users\User\PROJECTS\daria-nagai-league\daria-nagai-league\src\services\modals\modals.ts">
+        <metrics statements="7" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="1"/>
+        <line num="10" count="4" type="stmt"/>
+        <line num="13" count="4" type="stmt"/>
+        <line num="17" count="0" type="stmt"/>
+        <line num="18" count="0" type="stmt"/>
+        <line num="19" count="0" type="stmt"/>
+        <line num="23" count="0" type="stmt"/>
+        <line num="27" count="4" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.theme">
+      <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="globalStyles.ts" path="C:\Users\User\PROJECTS\daria-nagai-league\daria-nagai-league\src\theme\globalStyles.ts">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="3" count="4" type="stmt"/>
+        <line num="5" count="4" type="stmt"/>
+      </file>
+      <file name="index.ts" path="C:\Users\User\PROJECTS\daria-nagai-league\daria-nagai-league\src\theme\index.ts">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="theme.ts" path="C:\Users\User\PROJECTS\daria-nagai-league\daria-nagai-league\src\theme\theme.ts">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="4" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.types">
+      <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="image.ts" path="C:\Users\User\PROJECTS\daria-nagai-league\daria-nagai-league\src\types\image.ts">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="src.utils">
+      <metrics statements="14" coveredstatements="10" conditionals="4" coveredconditionals="1" methods="6" coveredmethods="4"/>
+      <file name="searchHighlight.ts" path="C:\Users\User\PROJECTS\daria-nagai-league\daria-nagai-league\src\utils\searchHighlight.ts">
+        <metrics statements="8" coveredstatements="4" conditionals="4" coveredconditionals="1" methods="3" coveredmethods="1"/>
+        <line num="1" count="3" type="stmt"/>
+        <line num="2" count="12" type="stmt"/>
+        <line num="3" count="0" type="stmt"/>
+        <line num="8" count="12" type="cond" truecount="1" falsecount="1"/>
+        <line num="9" count="12" type="stmt"/>
+        <line num="12" count="0" type="stmt"/>
+        <line num="14" count="0" type="stmt"/>
+        <line num="15" count="0" type="cond" truecount="0" falsecount="2"/>
+      </file>
+      <file name="tests.tsx" path="C:\Users\User\PROJECTS\daria-nagai-league\daria-nagai-league\src\utils\tests.tsx">
+        <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
+        <line num="14" count="4" type="stmt"/>
+        <line num="15" count="4" type="stmt"/>
+        <line num="18" count="4" type="stmt"/>
+        <line num="19" count="12" type="stmt"/>
+        <line num="25" count="4" type="stmt"/>
+        <line num="26" count="12" type="stmt"/>
+      </file>
+    </package>
+  </project>
+</coverage>

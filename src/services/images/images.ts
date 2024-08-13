@@ -18,7 +18,6 @@ class ImagesService {
       const response = await fetch(`${API_URL}/albums/1/photos`);
       if (response.ok) {
         const images = await response.json();
-
         this.images = images;
       }
     } catch {
@@ -26,7 +25,6 @@ class ImagesService {
     } finally {
       this.isLoading = false;
     }
-    this.isLoading = false;
   }
 
   setSearchValue(value: string) {
@@ -35,16 +33,15 @@ class ImagesService {
 
   get filteredImages() {
     const searchValue = this.searchValue.toLowerCase();
-    return this.images.reduce<Image[]>((acc, image) => {
-      const title = image.title.toLowerCase();
-      if (searchValue && title.includes(searchValue)) {
-        const highlightedTitle = searchHighlight(searchValue, image.title);
-        acc.push({ ...image, title: highlightedTitle });
-      } else if (!searchValue) {
-        acc.push(image);
-      }
-      return acc;
-    }, []);
+    return this.images
+      .filter((image) => {
+        const title = image.title.toLowerCase();
+        return !searchValue || title.includes(searchValue);
+      })
+      .map((image) => ({
+        ...image,
+        title: searchHighlight(this.searchValue, image.title)
+      }));
   }
 }
 

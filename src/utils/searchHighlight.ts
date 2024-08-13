@@ -1,17 +1,17 @@
 export const searchHighlight = (searchParameter: string, text: string) => {
-  // Проверяем, содержит ли searchParameter только буквы
-  if (!/^[a-zA-Z]+$/.test(searchParameter)) return text;
+  const handleFindWord = (word: string) => {
+    return word
+      .toLocaleLowerCase()
+      .includes(searchParameter.toLocaleLowerCase());
+  };
 
-  // Приводим параметры поиска и текст к нижнему регистру
-  const lowerSearchParameter = searchParameter.toLowerCase();
+  if (!/^[a-zA-Z]+$/.test(searchParameter)) {
+    return text;
+  }
 
-  // Используем регулярное выражение для разделения текста на слова и знаки препинания
-  return text
-    .split(/(\s+|\b)/) // Разделяем по пробелам и границам слов, сохраняя разделители
-    .map((word) =>
-      word.toLowerCase().includes(lowerSearchParameter)
-        ? `<em>${word}</em>`
-        : word
-    )
-    .join(""); // Объединяем результат в строку
+  const words = text.split(/\b/);
+
+  return words
+    .map((word) => (handleFindWord(word) ? `<em><b>${word}</b></em>` : word))
+    .join("");
 };

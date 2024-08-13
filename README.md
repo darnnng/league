@@ -1,50 +1,34 @@
-# React + TypeScript + Vite
+# Image gallery
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Frontend app created with Typescript, React, Styled Components, MobX, Vite.
+Tested with Jest, React-testing-library.
 
-Currently, two official plugins are available:
+1. Run `pnpm install` in the root directory.
+2. Run `pnpm dev` in the root directory.
+3. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Scripts
 
-## Expanding the ESLint configuration
+In the project directory, you can run:
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### `pnpm dev`
 
-- Configure the top-level `parserOptions` property like this:
+Runs the app in development mode. Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+### `pnpm build`
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+Builds the app for production in the `dist` folder. It correctly bundles React in production mode and optimizes the build for the best performance.
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+## Assumptions
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+While developing this project, several assumptions were made. The following changes and improvements can be considered:
+
+- **Error Handling and Notifications**: Added user notifications to provide better user experience in case of errors.
+
+- **Layout Flexibility**: Implemented functionality to switch between different layout modes such as grid and list views.
+
+- **Architecture**: Considered adopting an Atomic Design approach if the project was larger and required more structured component management.
+
+- **Testing**: Expanded the testing suite to include different types of tests. Would also improve their number and quality. This would improve the reliability of the application.
+
+- **Framework Choice**: Next.js can be used if for example server-side rendering and great SEO was required. Next.js could offer additional features like built-in routing and server-side rendering that might be beneficial for certain use cases.
