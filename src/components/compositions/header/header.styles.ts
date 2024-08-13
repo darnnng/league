@@ -9,7 +9,6 @@ export const HeaderWrapper = styled.header`
       background-color: ${theme.palette.primary.light};
       padding: 16px;
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -35,9 +34,9 @@ export const Logo = styled.img`
 export const Title = styled.h1`
   ${({ theme }) => {
     return css`
-      font-size: 1.5rem;
-      color: ${theme.palette.primary};
-      margin-left: 1rem;
+      font-size: ${theme.typography.fontSize.md};
+      color: ${theme.palette.text.dark};
+      margin-left: 12px;
     `;
   }}
 `;
@@ -50,7 +49,6 @@ export const LogoTitleContainer = styled.div`
       align-items: center;
       width: 100%;
 
-      padding: 0 1.5rem;
       max-width: 150px;
       @media (max-width: ${theme.breakpoints.sm}) {
         max-width: 250px;

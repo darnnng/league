@@ -7,7 +7,7 @@ export const ModalImage = styled.img`
       max-width: 600px;
       width: auto;
       height: auto;
-      max-height: calc(100vh - 160px);
+      max-height: calc(100vh - 150px);
       border-radius: 10px;
       object-fit: cover;
     `;
@@ -21,8 +21,10 @@ export const ModalOverlay = styled.div`
   right: 0;
   bottom: 0;
   z-index: 100;
+
+  background-color: rgba(0, 0, 0, 0.4);
+
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgba(0, 0, 0, 0.5);
 `;

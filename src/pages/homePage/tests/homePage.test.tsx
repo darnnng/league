@@ -1,7 +1,6 @@
 import { imagesService } from "@/services/images";
 import { render, RouterTestProvider } from "@/utils/tests";
-
-import { screen, waitFor } from "@testing-library/react";
+import { screen, waitFor, act } from "@testing-library/react";
 
 const mockData = [
   {
@@ -40,7 +39,10 @@ describe("Home page", () => {
   });
 
   it("should render image cards", async () => {
-    render(<RouterTestProvider />);
+    await act(async () => {
+      render(<RouterTestProvider />);
+    });
+
     await waitFor(() => {
       const images = screen.getAllByTestId("test-card");
       expect(images).toHaveLength(3);
@@ -49,7 +51,11 @@ describe("Home page", () => {
 
   it("should display loader when loading", () => {
     imagesService.isLoading = true;
-    render(<RouterTestProvider />);
+
+    act(() => {
+      render(<RouterTestProvider />);
+    });
+
     expect(screen.getByTestId("test-loader")).toBeInTheDocument();
   });
 
@@ -60,9 +66,9 @@ describe("Home page", () => {
       json: jest.fn().mockResolvedValue([])
     });
 
-    imagesService.isLoading = false;
-
-    render(<RouterTestProvider />);
+    await act(async () => {
+      render(<RouterTestProvider />);
+    });
 
     await waitFor(() => {
       expect(

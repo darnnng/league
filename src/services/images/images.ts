@@ -1,7 +1,6 @@
 import { makeAutoObservable } from "mobx";
 import { API_URL } from "@/constants/url";
 import { Image } from "@/types/image";
-import { searchHighlight } from "@/utils/searchHighlight";
 
 class ImagesService {
   images: Image[] = [];
@@ -33,15 +32,10 @@ class ImagesService {
 
   get filteredImages() {
     const searchValue = this.searchValue.toLowerCase();
-    return this.images
-      .filter((image) => {
-        const title = image.title.toLowerCase();
-        return !searchValue || title.includes(searchValue);
-      })
-      .map((image) => ({
-        ...image,
-        title: searchHighlight(this.searchValue, image.title)
-      }));
+    return this.images.filter((image) => {
+      const title = image.title.toLowerCase();
+      return !searchValue || title.includes(searchValue);
+    });
   }
 }
 

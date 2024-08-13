@@ -39,11 +39,11 @@ export const ContentWrapper = styled.div`
     flex-grow: 1;
     gap: 16px;
     width: 100%;
-    max-width: 350px;
+    max-width: 340px;
     padding: 16px;
 
     @media (max-width: ${theme.breakpoints.md}) {
-      max-width: 270px;
+      max-width: 260px;
     }
   `}
 `;
@@ -54,7 +54,6 @@ export const Heading = styled.h2`
     font-size: ${theme.typography.fontSize.lg};
     font-weight: ${theme.typography.fontWeight.normal};
     line-height: ${theme.typography.lineHeight.lg};
-
     @media (max-width: ${theme.breakpoints.md}) {
       font-size: ${theme.typography.fontSize.normal};
       line-height: ${theme.typography.lineHeight.md};

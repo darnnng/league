@@ -1,4 +1,4 @@
-import { screen, waitFor } from "@testing-library/react";
+import { act, screen, waitFor } from "@testing-library/react";
 import { ImageModal } from "../imageModal";
 import { render } from "@/utils/tests";
 
@@ -25,7 +25,10 @@ describe("Image modal", () => {
   it("should display image when image is loaded", async () => {
     render(<ImageModal url={url} title={title} onClose={() => {}} />);
 
-    mockImage.onload();
+    act(() => {
+      mockImage.onload();
+    });
+
     await waitFor(() => {
       expect(screen.getByAltText(title)).toHaveAttribute("src", url);
     });
